@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+h2 {
+    font-weight: 300;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #00a1d6;
+    transition: all 0.2s;
+}
+
+img {
+    border: 0 none;
+    /*清除ie6默认图片边框*/
+    vertical-align: middle;
+    /*清除图片默认底部缝隙*/
+    border-radius: 5px;
+}
+
+input,
+button,
+textarea {
+    outline: 0;
+    border: 0 none;
+}
+
+.w {
+    width: 1320px;
+    margin: 0 100px 0 200px;
+}
+
+body {
+    font: 12px/1.5 arial, 'microsoft yahei';
+    background-color: #fff;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+.red {
+    color: #e60012;
+}
+
+/*字体图标*/
+/*声明字体*/
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/iconfont.eot');
+    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/iconfont.woff') format('woff'),
+        url('../fonts/iconfont.ttf') format('truetype'),
+        url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: 'iconfont';
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+/* 最顶部 */
+.header {
+    height: 31px;
+    background-color: #ccc;
+}
+
+.header li {
+    float: left;
+    height: 31px;
+    line-height: 31px;
+
+}
+
+.header li a {
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid #000;
+}
+
+.header .fl {
+    float: left;
+    height: 31px;
+    line-height: 31px;
+}
+
+#lic {
+    border: none;
+}
+
+/* 搜索部分 */
+.search {
+    height: 113px;
+    /* border-bottom: 2px solid #c81623; */
+}
+
+.search_logo {
+    width: 270px;
+    position: relative;
+}
+
+.search_content {
+    height: 61px;
+}
+
+/* logo */
+.search_logo {
+    margin-top: 10px;
+}
+
+/* 搜索框 */
+.search_con {
+    margin-left: 150px;
+    padding-top: 10px;
+}
+
+.search_con [type="text"] {
+    float: left;
+    border: 2px solid #c81623;
+    width: 400px;
+    height: 35px;
+    padding-left: 10px;
+}
+
+.search_con [type="submit"] {
+    float: left;
+    height: 39px;
+    width: 80px;
+    color: #fff;
+    padding-left: -5px;
+    font-size: 16px;
+    background-color: #c81623;
+}
+
+/* 购物车 */
+.search_right {
+    position: relative;
+    margin-top: 10px;
+    margin-right: 60px;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+.search_right img {
+    padding-left: 10px;
+    height: 14px;
+}
+
+.search_right i {
+    position: absolute;
+    width: 35px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #c81623;
+    top: -10px;
+    color: #fff;
+    border-radius: 15px 15px 15px 0px;
+}
+
+.search_bottom li {
+    float: left;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+/* 导航部分 */
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #c81623;
+}
+
+.nav h2 {
+    float: left;
+
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    color: #000;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.nav li {
+    float: left;
+    font-size: 14px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    padding-left: 40px;
+}
+
+
+/* 底部部分 */
+/* 上部 */
+.footer {
+    height: 417px;
+    background-color: #87ceeb;
+    position: relative;
+    margin-top: 30px;
+}
+
+.footer_icon {
+    height: 111px;
+
+    border-bottom: 1px solid #fff;
+}
+
+.footer_icon ul {
+    padding-top: 40px;
+}
+
+.footer_icon li {
+    float: left;
+    margin-left: 60px;
+}
+
+.footer_icon img {
+    float: left;
+}
+
+.footer_icon .fontz {
+    float: left;
+    padding-top: 5px;
+    padding-left: 3px;
+}
+
+.footer_icon .fontz h4 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* 中部 */
+.footer_content {
+    height: 190px;
+    border-bottom: 1px solid #fff;
+}
+
+.footer_content ul {
+    float: left;
+    padding-top: 30px;
+}
+
+.footer_content li {
+    margin-left: 100px;
+}
+
+.footer_first {
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+/* 底部 */
+.footer_bott ul {
+    padding-top: 25px;
+    padding-left: 50px;
+}
+
+.footer_bott li {
+    float: left;
+    padding-left: 40px;
+}
+
+.footer_bott p {
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
+
+
+
+/* 公用之上 */
+
+.headline {
+    height: 40px;
+    width: 900px;
+
+    .headline_1 {
+        span {
+            height: 50px;
+            line-height: 50px;
+        }
+
+    }
+
+    .online {
+        width: 260px;
+        height: 38px;
+        line-height: 38px;
+        background-color: #e5e9ef;
+        margin-right: 150px;
+        margin-top: 10px;
+        color: #333;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+}
+/* 公用按钮 */
+.butz {
+    line-height: 40px;
+
+    button {
+        margin-top: 10px;
+        &:first-child {
+            position: absolute;
+            left: 59%;
+            width: 120px;
+            height: 24px;
+            font-size: 12px;
+            line-height: 24px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+            &:hover {
+                background-color: #ccc;
+            }
+        }
+
+        &:last-child {
+            position: absolute;
+            left: 67%;
+            box-sizing: border-box;
+            padding-left: 3px;
+            width: 54px;
+            height: 24px;
+            font-size: 12px;
+            line-height: 24px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+
+            img {
+                margin-left: -12px;
+            }
+
+            &:hover {
+                background-color: #ccc;
+            }
+        }
+    }
+}
+/* 公用小图片流1 */
+.live_module {
+    width: 900px;
+
+    ul {
+        li {
+            position: relative;
+            width: 160px;
+            float: left;
+            margin-right: 18px;
+            height: 140px;
+
+            .userinfo {
+                position: absolute;
+                color: #fff;
+                font-size: 10px;
+                bottom: 40px;
+                opacity: 0.9;
+
+                i {
+                    margin-left: 5px;
+                    margin-right: 65px;
+                }
+
+            }
+
+            .title {
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .info {
+                color: #bbb;
+            }
+        }
+    }
+
+}
+
+/* 这是鼠标经过样式 */
+.guHed {
+    position: absolute;
+    right: 225px;
+    top: 10px;
+    i{  
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 3px;
+        border-color: transparent transparent #00a1d6 transparent;
+        display: none;
+    }
+    .n1{
+        margin-right: 10px;
+        &:hover{
+            border-bottom: 1px solid #00a1d6;
+            i{
+                display: block;
+            }
+        }
+    }
+    .n2{
+        margin-right: 10px;
+        &:hover{
+            border-bottom: 1px solid #00a1d6;
+            i{
+                display: block;
+            }
+        }
+    }
+    .n3{
+        margin-right: 10px;
+        &:hover{
+            border-bottom: 1px solid #00a1d6;
+            i{
+                display: block;
+            }
+        }
+    }
+}
+.highlight{
+    background-color: #f25d8e;
+}
+
+/* 侧边栏鼠标经过 */
+.on{
+    background-color: #00a1d6;
+    color:#fff;
+    transition: all 0.2s;
+    
+}
+
+.nb{
+    width: 18px;
+    height: 18px;
+    background-image: url(../icons/icons.png);
+    background-position: -855px -727px;
+}
+.open{
+    opacity: 1;
+    /* right: -20px; */
+    padding-left: 20px;
+    width: 200px;
+    z-index:2;
+}
+
+/* 全局黑 */
+.elevator-mask{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+}
